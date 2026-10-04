@@ -1,0 +1,21 @@
+Week 5 Final Project Report – Student Performance Dashboard
+
+Introduction
+For the final week of my frontend development internship, I developed a Student Performance Dashboard as a mini web application. The main objective of this project was to integrate the concepts and skills learned during the previous weeks, including responsive web design, JavaScript interactivity, accessibility and performance optimization.
+
+Development Process
+I first planned the dashboard structure and divided it into different sections such as statistics cards, search and filter controls, a subject performance chart, a student leaderboard and a student records table. I used HTML5 semantic elements to create a clear and structured page layout. CSS3 was used to create a responsive interface that adapts to desktop, tablet and mobile screen sizes.
+
+For dynamic functionality, I created a static data.json file containing student information. JavaScript fetches this data and dynamically displays it on the dashboard. I implemented search functionality, course filtering and sorting options so that users can easily find and organize student records. The dashboard automatically calculates average marks, pass percentage and identifies the top-performing student.
+
+Accessibility Improvements
+Accessibility was an important part of the project. I used semantic HTML, descriptive labels, ARIA attributes, keyboard-friendly controls, visible focus states and readable color contrast. I also added reduced-motion support for users who prefer fewer animations. The responsive table and form controls were designed to remain usable on smaller screens.
+
+Performance Optimization
+For performance, the JavaScript file is loaded using the defer attribute. The application does not depend on large external libraries, which keeps the project lightweight. The student data is stored in a small JSON file and is loaded dynamically. The JavaScript code is organized into reusable functions to improve maintainability and avoid unnecessary code repetition.
+
+Testing
+I tested the dashboard on different screen sizes and checked the search, filtering, sorting, dark mode and dynamic data features. I also checked keyboard navigation, responsive table behavior and the overall layout on mobile and desktop screen sizes. The dashboard successfully displays the data and updates the interface when users interact with the controls.
+
+Conclusion
+This project helped me understand how different frontend development skills can be combined to create a complete web application. It improved my knowledge of HTML5, CSS3, JavaScript, JSON data handling, DOM manipulation, responsive design, accessibility and performance optimization. The final dashboard demonstrates a practical and user-friendly frontend application developed using the skills learned throughout the internship.
