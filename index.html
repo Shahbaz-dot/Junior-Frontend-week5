@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Responsive Student Performance Dashboard">
+    <title>Student Performance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div>
+                <p class="eyebrow">WEEK 5 • FINAL PROJECT</p>
+                <h1>Student Performance Dashboard</h1>
+                <p class="subtitle">
+                    Interactive dashboard for monitoring student academic performance.
+                </p>
+            </div>
+
+            <button
+                id="themeBtn"
+                class="theme-btn"
+                type="button"
+                aria-label="Toggle dark mode">
+                🌙 Dark Mode
+            </button>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <section class="stats-grid" aria-label="Dashboard statistics">
+
+        <article class="stat-card">
+            <span class="stat-icon">👨‍🎓</span>
+            <div>
+                <p>Total Students</p>
+                <h2 id="totalStudents">0</h2>
+            </div>
+        </article>
+
+        <article class="stat-card">
+            <span class="stat-icon">📊</span>
+            <div>
+                <p>Average Marks</p>
+                <h2 id="averageMarks">0%</h2>
+            </div>
+        </article>
+
+        <article class="stat-card">
+            <span class="stat-icon">✅</span>
+            <div>
+                <p>Pass Percentage</p>
+                <h2 id="passPercentage">0%</h2>
+            </div>
+        </article>
+
+        <article class="stat-card">
+            <span class="stat-icon">🏆</span>
+            <div>
+                <p>Top Performer</p>
+                <h2 id="topStudent">-</h2>
+            </div>
+        </article>
+
+    </section>
+
+
+    <section class="controls-section" aria-labelledby="controlsTitle">
+
+        <div class="section-heading">
+            <div>
+                <p class="eyebrow">INTERACTION</p>
+                <h2 id="controlsTitle">Search & Filter</h2>
+            </div>
+
+            <span id="resultCount" class="result-count">
+                0 students
+            </span>
+        </div>
+
+        <div class="controls">
+
+            <div class="input-group">
+                <label for="searchInput">Search Student</label>
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Enter student name..."
+                    aria-label="Search students by name">
+            </div>
+
+            <div class="input-group">
+                <label for="courseFilter">Course</label>
+                <select id="courseFilter" aria-label="Filter students by course">
+                    <option value="all">All Courses</option>
+                    <option value="CSE">CSE</option>
+                    <option value="AI">AI</option>
+                    <option value="ECE">ECE</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="sortSelect">Sort By</label>
+                <select id="sortSelect" aria-label="Sort student results">
+                    <option value="name">Name</option>
+                    <option value="marks-high">Marks: High to Low</option>
+                    <option value="marks-low">Marks: Low to High</option>
+                </select>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="dashboard-grid">
+
+        <article class="panel chart-panel">
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">PERFORMANCE</p>
+                    <h2>Subject Average</h2>
+                </div>
+            </div>
+
+            <div
+                id="chart"
+                class="chart"
+                aria-label="Subject average marks chart"
+                role="img">
+            </div>
+        </article>
+
+
+        <article class="panel top-panel">
+
+            <div class="panel-heading">
+                <div>
+                    <p class="eyebrow">LEADERBOARD</p>
+                    <h2>Top Students</h2>
+                </div>
+            </div>
+
+            <div id="leaderboard" class="leaderboard">
+                Loading...
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <section class="panel table-panel" aria-labelledby="tableTitle">
+
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">STUDENT DATA</p>
+                <h2 id="tableTitle">Student Records</h2>
+            </div>
+        </div>
+
+        <div class="table-wrapper">
+
+            <table>
+                <caption class="sr-only">
+                    Student academic performance records
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Student</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">Java</th>
+                        <th scope="col">Python</th>
+                        <th scope="col">Database</th>
+                        <th scope="col">Average</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTable">
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No students found.
+        </p>
+
+    </section>
+
+
+    <section class="info-panel">
+
+        <div>
+            <p class="eyebrow">ACCESSIBILITY</p>
+            <h2>Built for Everyone</h2>
+            <p>
+                This dashboard uses semantic HTML, accessible labels,
+                keyboard-friendly controls, focus states and sufficient
+                contrast to improve usability.
+            </p>
+        </div>
+
+        <div>
+            <p class="eyebrow">PERFORMANCE</p>
+            <h2>Optimized Loading</h2>
+            <p>
+                JavaScript is deferred, the application uses a lightweight
+                structure and data is loaded dynamically from a JSON file.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+    <p>Week 5 Final Project • Student Performance Dashboard</p>
+</footer>
+
+</body>
+</html>
