@@ -1,83 +1,83 @@
 [
     {
-        "name": "Aarav Sharma",
+        "name": "Shahbaz Alam",
         "course": "CSE",
-        "java": 88,
+        "java": 90,
         "python": 92,
         "database": 85
     },
     {
-        "name": "Priya Singh",
+        "name": "Shreya Rastogi",
         "course": "AI",
         "java": 94,
         "python": 91,
         "database": 89
     },
     {
-        "name": "Rahul Verma",
+        "name": "Zeeshan Samad",
         "course": "CSE",
         "java": 76,
         "python": 82,
         "database": 79
     },
     {
-        "name": "Ananya Gupta",
+        "name": "Shahnawa Ali",
         "course": "AI",
         "java": 91,
         "python": 96,
         "database": 94
     },
     {
-        "name": "Aditya Khan",
+        "name": "Hasmii Khan",
         "course": "ECE",
         "java": 69,
         "python": 74,
         "database": 71
     },
     {
-        "name": "Sneha Patel",
+        "name": "Wasif Ali",
         "course": "CSE",
         "java": 85,
         "python": 88,
         "database": 91
     },
     {
-        "name": "Arjun Yadav",
+        "name": "Arshad Ali",
         "course": "ECE",
         "java": 72,
         "python": 78,
         "database": 75
     },
     {
-        "name": "Mehak Ali",
+        "name": "Kaif Ali",
         "course": "AI",
         "java": 89,
         "python": 93,
         "database": 90
     },
     {
-        "name": "Rohan Kumar",
+        "name": "Asim Alam",
         "course": "CSE",
         "java": 64,
         "python": 70,
         "database": 68
     },
     {
-        "name": "Ishita Mishra",
+        "name": "Mussharaf Alam",
         "course": "AI",
         "java": 97,
         "python": 95,
         "database": 96
     },
     {
-        "name": "Vivek Singh",
+        "name": "Zahir Noor",
         "course": "ECE",
         "java": 81,
         "python": 79,
         "database": 83
     },
     {
-        "name": "Sana Khan",
+        "name": "Ambar Nawaz",
         "course": "CSE",
         "java": 92,
         "python": 87,
